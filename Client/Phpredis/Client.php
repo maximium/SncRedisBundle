@@ -65,6 +65,16 @@ class Client
     {
         $this->redis = $redis;
     }
+    
+     /**
+     * Returns the redis instance
+     *
+     * @return \Redis
+     */
+    public function getRedis()
+    {
+        return $this->redis;
+    }
 
     /**
      * Proxy function to enable logging
